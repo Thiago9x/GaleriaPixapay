@@ -19,7 +19,7 @@ const pesquisarImagens = async(evento) =>{
         //recebendo value do select
         const tipoImagem = document.querySelector(".categorias").value;
         //recebendo value do input
-        const pesquisa = evento.target.value;
+        const pesquisa = document.querySelector("#pesquisa").value;
         //url json pixabay
         const url = `https://pixabay.com/api/?key=23670717-85b5103b3d880933d4e67c566&q=${pesquisa}&image_type=${tipoImagem}`;
         //fazendo requisição
