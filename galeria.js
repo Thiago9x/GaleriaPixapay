@@ -14,7 +14,8 @@ const carregarStatus = (status,pesquisa) =>{
 }
 
 const pesquisarImagens = async(evento) =>{
-    if(evento.key == "Enter"){
+    console.log(evento)
+    if(evento.key == "Enter"|| evento.type=="click"){
         //recebendo value do select
         const tipoImagem = document.querySelector(".categorias").value;
         //recebendo value do input
@@ -63,3 +64,8 @@ const carregarGaleria = imagens => imagens.forEach(criarItem);
 document.querySelector("#pesquisa").addEventListener("keypress", pesquisarImagens);
 document.querySelector(".categorias").addEventListener("selected", pesquisarImagens);
 const search  = document.querySelector("#searchName").addEventListener("click", pesquisarImagens);
+const pesquisa = document.getElementById('searchName')
+
+const lupa = document.getElementById('searchName')
+
+lupa.onclick = () =>pesquisarImagens;
