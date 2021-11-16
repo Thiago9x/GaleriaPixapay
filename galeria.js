@@ -21,7 +21,7 @@ const pesquisarImagens = async(evento) =>{
         //recebendo value do input
         const pesquisa = document.querySelector("#pesquisa").value;
         //url json pixabay
-        const url = `https://pixabay.com/api/?key=23670717-85b5103b3d880933d4e67c566&q=${pesquisa}&image_type=${tipoImagem}`;
+        const url = `https://pixabay.com/api/?key=24242238-48ffb325c4646feb8e655b490&q=${pesquisa}&image_type=${tipoImagem}`;
         //fazendo requisição
         const response = await fetch(url);
         //Extraindo json
